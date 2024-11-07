@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root {
+    --primaryColor:#269bff;
+    --secondColor:#ffdb28;
+    --fontColor:#1e1e1e1e;
+    --whiteColor:#fff;
+    --softColor:#bceaff;
+    --greyColor:#8c8c8c;
+    --softRed:#f46363;
+    --softPurple:#b68bed;
+    --softGreen:#1d8f86;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Rubik", sans-serif;
+}
+
+body 
+{
+    width: 100%;
+    height: auto;
+    background-color: var(--softColor);
+    margin-bottom: 2%;
+}
+
+.navbar
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    color: var(--fontColor);
+}
+
+.logo 
+{
+    text-decoration: none;
+    background-color: var(--primaryColor);
+    color: var(--softColor);
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-left: 3px;
+    letter-spacing: 2;
+    font-weight: 600;
+    box-shadow: rgba(134, 156, 165, 0.2) 0px 2px 8px 0px;
+}
+
+.menus 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    min-width: 300px;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(135, 156, 165, 0.2) 0px 2px 8px 0px;
+}
+
+.menus a 
+{
+    text-decoration: none;
+    /* color: var(--fontColor); */
+    color: #111;
+    margin: 0 10px;
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+.menus a:hover
+{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.right-menus 
+{
+    display: flex;
+}
+
+.right-icon 
+{
+    border-radius: 50%;
+    justify-content: center;
+    background-color: var(--whiteColor);
+    box-shadow: rgba(134, 156, 165, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    margin: 3px;
+    cursor: pointer;
+    color: var(--fontColor);
+}
+
+.right-icon a 
+{
+    /* color: var(--fontColor); */
+    color: #111;
+}
+
+.right-icon:hover 
+{
+    background-color: var(--primaryColor);
+}
+
+.right-icon a:hover
+{
+    color: var(--whiteColor);
+}
+
+.wrapper 
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 3%;
+}
+
+.top-left
+{
+    display: flex;
+    flex: 60%;
+}
+
+.top-right
+{
+    display: flex;
+    flex: 40%;
+}
+
+.card 
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3%;
+    margin: 0.7rem;
+    background-color: var(--whiteColor);
+    border-radius: 8px;
+    min-height: 100px;
+    box-shadow: rgba(134, 156, 165, 0.2) 0px 2px 8px 0px;
+}
+
+.card-top, .card-bottom 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-account 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.title 
+{
+    letter-spacing: 1;
+}
+
+.account-number
+{
+    padding: 1% 3%;
+    background-color: var(--softColor);
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 0 0.5rem 0;
+}
+
+.text 
+{
+    font-size: 14px;
+    margin: 1rem 0;
+    letter-spacing: 0.6;
+    line-height: 1.6;
+}
+
+.btn-account 
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-btn
+{
+    border:none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem 0.5rem 0;
+    letter-spacing: 0.5;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-saving1 
+{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.btn-saving1:hover
+{
+    background-color: var(--secondColor);
+    color: var(--fontColor);
+    box-shadow: rgba(90, 140, 255, 0.35) 0px 5px 15px;
+}
+
+.btn-saving2
+{
+    background-color: var(--softColor);
+    color: var(--primaryColor);
+}
+
+.btn-saving2:hover
+{
+    background-color: var(--softColor);
+    color: var(--whiteColor);
+    box-shadow: rgba(90, 140, 255, 0.35) 0px 5px 15px;
+}
+
+.img-account 
+{
+    width: 30%;
+}
+
+.feature
+{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.btn-feature
+{
+    background-color: var(--secondColor);
+    color: var(--fontColor);
+}
+
+.btn-feature:hover
+{
+    background-color: var(--fontColor);
+    color: var(--secondColor);
+    box-shadow: rgba(90, 140,255, 0.35) 0px 5px 15px;
+}
+
+.img-feature{
+    width: 40%;
+}
+
+.middle-left 
+{
+    display: flex;
+    flex: 50%;
+}
+
+.middle-right
+{
+    display: flex;
+    flex: 50%;
+}
+
+.wallet-top{
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.wallet-title{
+    width: 100%;
+}
+
+.wallet-title p
+{
+    font-size: 12px;
+}
+
+.wallet-icon
+{
+    font-size: 32px;
+    color: var(--whiteColor);
+}
+
+.wallet-num
+{
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 5px 15px;
+    border-radius: 30px;
+    letter-spacing: 1.2;
+}
+
+.red
+{
+    background-color: var(--softRed);
+}
+
+.yellow{
+    background-color: var(--secondColor);
+}
+
+.purple{
+    background-color: var(--softPurple);
+}
+
+.green{
+    background-color: var(--softGreen);
+}
+
+.bottom-left{
+    display: flex;
+    flex: 40%;
+    min-height: 250px;
+}
+
+.bottom-right{
+    display: flex;
+    flex: 60%;
+    width: 100%;
+}
+
+.more{
+    background-color: var(--primaryColor);
+    color: var(--softColor);
+    padding: 0.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.more:hover{
+    background-color: var(--secondColor);
+    color: var(--fontColor);
+}
+
+.user-wrapper{
+    width: 100%;
+    margin: 1%;
+}
+
+.card-user{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+    border: 1px solid var(--softColor);
+    border-radius: 4px;
+    padding:2%;
+    margin: 0 0.5rem;
+}
+
+.card-user:hover
+{
+    background-color: var(--softColor);
+}
+
+.img-user img
+{
+    /* width: 40%; */
+    /* height: 40px; */
+    width: 80%;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.detail-user
+{
+    width: 70%;
+}
+
+.detail-user p{
+    font-size: 12px;
+    color: var(--greyColor);
+}
+
+.action-user{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 150px;
+    gap: 4px;
+}
+
+.btn-user{
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+}
+
+.btn-action1{
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.btn-action1:hover{
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+
+.btn-action2{
+    background-color: transparent;
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+
+.btn-action2:hover{
+    background-color: var(--greyColor);
+    border: 1px solid var(--greyColor);
+    color: var(--whiteColor);
+}
+
+
+.card-table 
+{
+    overflow-x:auto;
+    width: 100%;
+}
+
+.card-table table
+{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.card-table table tr
+{
+    border-bottom: 1px solid var(--softColor);
+}
+
+.card-table table tr:hover
+{
+    background-color: var(--softColor);
+}
+
+.card-table table td
+{
+    padding: 2.5% 1%;
+    min-width: 100px;
+}
+
+.card-table table i
+{
+    color: var(--greyColor);
+    font-size: 12px;
+}
+
+.category{
+    color: var(--whiteColor);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.blue {
+    background-color: var(--primaryColor);
+}
+
+.text-blue {
+    color: var(--primaryColor);
+}
+
+.card-value{
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width:640px)
+{
+    .top-left, .top-right,
+    .middle-left, .middle-right,
+    .bottom-left, .bottom-right {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width:520px)
+{
+    .menus{
+        display: none;
+    }
+
+    .card{
+        margin: 2%;
+    }
+}
+
